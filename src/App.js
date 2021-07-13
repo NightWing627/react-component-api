@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
 import CondRender from './CondRender';
+import RefTest from './RefTest';
 
 class App extends React.Component {
   constructor() {
@@ -39,6 +40,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>This is Ref TEST</h1>
+        <RefTest /><hr />
+
         <h1>This Component API TEST</h1>
         <div>
           <h1>
@@ -59,10 +63,12 @@ class App extends React.Component {
           <h3 id="myDivOne">JTP-NODE1</h3>
           <h3 id="myDivTwo">JTP-NODE2</h3>
         </div><hr />
+        
+        <h1>This is Conditional Render Sample</h1>
         <div>
-          <h1>This is Conditional Render Sample</h1>
           <CondRender />
         </div><hr />
+
       </div>
       
     );
